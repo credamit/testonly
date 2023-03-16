@@ -1,4 +1,5 @@
 - name: Copy a single file
+  hosts: testonlyhost
   ansible.windows.win_copy:
     src: /srv/myfiles/foo.conf
     dest: C:\Temp\renamed-foo.conf
