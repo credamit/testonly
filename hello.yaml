@@ -4,3 +4,4 @@
     - name: One simple task
       ansible.windows.win_file:
         path: C:\Temp\renamed-foo.conf
+        state: touch
