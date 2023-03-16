@@ -1,7 +1,6 @@
-- name: Copy a single file
+- name: Coreate abd empty file
   hosts: testonlyhost
   tasks: 
     - name: One simple task
-      ansible.windows.win_copy:
-        src: /srv/myfiles/foo.conf
-        dest: C:\Temp\renamed-foo.conf
+      ansible.windows.win_file:
+        path: C:\Temp\renamed-foo.conf
